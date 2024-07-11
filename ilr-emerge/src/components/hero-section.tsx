@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import image1 from "./../../public/images/placeholderImg.png";
 
   //function that receive the specific element_id as string and scroll into that element_id
   const scrollToSection = function (element_id: string) {
@@ -34,12 +36,25 @@ const HeroSection = () => {
             </button></Link>
           </div>
           <div>
+            <Image 
+              src={image1}
+              alt='placeholder image of conference speaker'
+              quality={70}
+            />
             <p className="mt-4 leading-relaxed">
-            <i>
-              {/*FIX ME*/}
-                  ...photo goes here. Could be stock image or a section introducing Tessy. 
-                </i>
-              {/*FIX ME*/}  
+              Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+              taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi
+              pug. Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+              taxidermy. Gastropub indxgo juice poutine, ramps microdosing
+              banh mi pug VHS try-hard.Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+              taxidermy. Gastropub indxgo juice poutine, ramps microdosing
+              banh mi pug VHS try-hard.Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+              taxidermy. Gastropub indxgo juice poutine, ramps microdosing
+              banh mi pug VHS try-hard.Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+              taxidermy. Gastropub indxgo juice poutine, ramps microdosing
+              banh mi pug VHS try-hard.Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+              taxidermy. Gastropub indxgo juice poutine, ramps microdosing
+              banh mi pug VHS try-hard.
             </p>
           </div>
         </div>
