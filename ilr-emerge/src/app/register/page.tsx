@@ -1,5 +1,5 @@
 import React from "react";
-import ContactForm from "@/components/form";
+import RegistrationForm from "@/app/register/component/form";
 
 const Register = () => {
   return (
@@ -16,13 +16,13 @@ const Register = () => {
             </div>
             <div className="lg:w-1/2 md:w-2/3 mx-auto">
             <div className="flex flex-wrap -m-2">
-                <ContactForm />
+                <RegistrationForm />
                 <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                <a className="text-indigo-500">example@email.com</a>
+                <a className="text-indigo-500">internationalladiesretreat@gmail.com</a>
                 <p className="leading-normal my-5">
-                    49 Smith St.
+                    3710 Franklin Pike
                     <br />
-                    Nashville, TN 56301
+                    Nashville, TN 37204
                 </p>
                 <span className="inline-flex">
                     <a className="text-gray-500">
