@@ -65,184 +65,179 @@ const RegistrationForm = () => {
         onSubmit={handleSubmit}
       >
         <Form>
-          <div className="lg:w-1/2 md:w-2/3 mx-auto">
-            <div className="flex flex-wrap -m-2">
-              <div className="p-2 w-1/2">
-                <div className="relative">
-                  <label className="leading-7 text-sm text-gray-600">
-                    First Name
-                  </label>
-                  <Field
+          <div className="lg:w-2/3 md:w-4/5 mx-auto">
+            <div className="border-b border-gray-900/10 pb-8 flex flex-wrap -m-2">
+            <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+              
+              <div className="sm:col-span-3">
+                <label htmlFor="first-name" className="block text-sm font-medium leading-6 text-gray-900">
+                  First name
+                </label>
+                <div className="mt-2">
+                  <input
+                    id="first-name"
+                    name="first-name"
                     type="text"
-                    id="firstName"
-                    name="name"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                  />
-                  <label className="leading-7 text-sm text-gray-400">
-                    First Name
-                  </label>
-                  <ErrorMessage
-                    name="firstName"
-                    component="div"
-                    className="text-red-500"
-                  />
-                </div>
-              </div>
-              <div className="p-2 w-1/2">
-                <div className="relative">
-                  <Field
-                    type="text"
-                    id="lastName"
-                    name="lastName"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                  />
-                  <label className="leading-7 text-sm text-gray-400">
-                    Last Name
-                  </label>
-                  <ErrorMessage
-                    name="lastName"
-                    component="div"
-                    className="text-red-500"
-                  />
-                </div>
-              </div>
-              <div className="p-2 w-full">
-                <div className="relative">
-                  <label className="leading-7 text-sm text-gray-600">
-                    Email
-                  </label>
-                  <Field
-                    id="message"
-                    name="message"
-                    as="textarea"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                  />
-                  <label className="leading-7 text-sm text-gray-400">
-                    example@example.com
-                  </label>
-                  <ErrorMessage
-                    name="message"
-                    component="div"
-                    className="text-red-500"
+                    autoComplete="given-name"
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
 
-              <div className="p-2 w-full">
-                <div className="relative">
-                  <label className="leading-7 text-sm text-gray-600">
-                    Phone Number
-                  </label>
-                  <Field
-                    id="message"
-                    name="message"
-                    as="textarea"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              <div className="sm:col-span-3">
+                <label htmlFor="last-name" className="block text-sm font-medium leading-6 text-gray-900">
+                  Last name
+                </label>
+                <div className="mt-2">
+                  <input
+                    id="last-name"
+                    name="last-name"
+                    type="text"
+                    autoComplete="family-name"
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
-                  <ErrorMessage
-                    name="message"
-                    component="div"
-                    className="text-red-500"
+                </div>
+              </div>
+              </div>
+
+              <div className="sm:col-span-4">
+                <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+                  Email address
+                </label>
+                <div className="mt-2">
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autoComplete="email"
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
 
-              <div className="p-2 w-full">
-                <div className="relative">
-                  <label className="leading-7 text-sm text-gray-600">
-                    Address
-                  </label>
-                  <Field
-                    id="message"
-                    name="message"
-                    as="textarea"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                  />
-                  <label className="leading-7 text-sm text-gray-400">
-                    Street Address
-                  </label>
-                  <ErrorMessage
-                    name="message"
-                    component="div"
-                    className="text-red-500"
+              <div className="sm:col-span-4">
+                <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+                  Phone Number
+                </label>
+                <div className="mt-2">
+                  <input
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    type="text"
+                    autoComplete="tel"
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
-              <div className="p-2 w-full">
-                <div className="relative">
-                  <Field
-                    id="message"
-                    name="message"
-                    as="textarea"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                  />
-                  <label className="leading-7 text-sm text-gray-400">
-                    Street Address Line 2
-                  </label>
-                  <ErrorMessage
-                    name="message"
-                    component="div"
-                    className="text-red-500"
+
+              <div className="sm:col-span-3">
+                <label htmlFor="country" className="block text-sm font-medium leading-6 text-gray-900">
+                  Country
+                </label>
+                <div className="mt-2">
+                  <select
+                    id="country"
+                    name="country"
+                    autoComplete="country-name"
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
+                  >
+                    <option>United States</option>
+                    <option>Canada</option>
+                    <option>Mexico</option>
+                  </select>
+                </div>
+              </div>
+
+              <div className="col-span-full">
+                <label htmlFor="street-address" className="block text-sm font-medium leading-6 text-gray-900">
+                  Street address
+                </label>
+                <div className="mt-2">
+                  <input
+                    id="street-address"
+                    name="street-address"
+                    type="text"
+                    autoComplete="street-address"
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
-              <div className="p-2 w-full">
-                <div className="relative">
-                  <Field
-                    id="message"
-                    name="message"
-                    as="textarea"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                  />
-                  <label className="leading-7 text-sm text-gray-400">
-                    City
-                  </label>
-                  <ErrorMessage
-                    name="message"
-                    component="div"
-                    className="text-red-500"
+
+              <div className="sm:col-span-2 sm:col-start-1">
+                <label htmlFor="city" className="block text-sm font-medium leading-6 text-gray-900">
+                  City
+                </label>
+                <div className="mt-2">
+                  <input
+                    id="city"
+                    name="city"
+                    type="text"
+                    autoComplete="address-level2"
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
-              <div className="p-2 w-full">
-                <div className="relative">
-                  <Field
-                    id="message"
-                    name="message"
-                    as="textarea"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                  />
-                  <label className="leading-7 text-sm text-gray-400">
-                    State / Province
-                  </label>
-                  <ErrorMessage
-                    name="message"
-                    component="div"
-                    className="text-red-500"
+
+              <div className="sm:col-span-2">
+                <label htmlFor="region" className="block text-sm font-medium leading-6 text-gray-900">
+                  State / Province
+                </label>
+                <div className="mt-2">
+                  <input
+                    id="region"
+                    name="region"
+                    type="text"
+                    autoComplete="address-level1"
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
-              <div className="p-2 w-full">
-                <div className="relative">
-                  <Field
-                    id="message"
-                    name="message"
-                    as="textarea"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                  />
-                  <label className="leading-7 text-sm text-gray-400">
-                    Postal / Zip Code
-                  </label>
-                  <ErrorMessage
-                    name="message"
-                    component="div"
-                    className="text-red-500"
+
+              <div className="sm:col-span-2">
+                <label htmlFor="postal-code" className="block text-sm font-medium leading-6 text-gray-900">
+                  ZIP / Postal code
+                </label>
+                <div className="mt-2">
+                  <input
+                    id="postal-code"
+                    name="postal-code"
+                    type="text"
+                    autoComplete="postal-code"
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
-              <div>
-                  {/* FIX ME INFO ON ATTENDING IN-PERSON OR ONLINE*/}
-              </div>
+            </div>
+
+            <fieldset>
+                <legend className="mt-8 text-sm font-semibold leading-6 text-gray-900">Push Notifications</legend>
+                <p className="mt-1 text-sm leading-6 text-gray-600">Mode of attendance</p>
+                <div className="mt-6 space-y-6">
+                  <div className="flex items-center gap-x-3">
+                    <input
+                      id="push-everything"
+                      name="push-notifications"
+                      type="radio"
+                      className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                    />
+                    <label htmlFor="push-everything" className="block text-sm font-medium leading-6 text-gray-900">
+                      In-person
+                    </label>
+                  </div>
+                  <div className="flex items-center gap-x-3">
+                    <input
+                      id="push-email"
+                      name="push-notifications"
+                      type="radio"
+                      className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                    />
+                    <label htmlFor="push-email" className="block text-sm font-medium leading-6 text-gray-900">
+                      Online
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+
               <div className="p-2 w-full">
                 <button
                   disabled={isLoading}
@@ -251,7 +246,7 @@ const RegistrationForm = () => {
                   Submit
                 </button>
               </div>
-            </div>
+
           </div>
         </Form>
       </Formik>

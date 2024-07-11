@@ -17,7 +17,7 @@ const Register = () => {
             <div className="lg:w-1/2 md:w-2/3 mx-auto">
             <div className="flex flex-wrap -m-2">
                 <RegistrationForm />
-                <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+                <div className="p-2 w-full pt-8 mt-8 text-center">
                 <a className="text-indigo-500">internationalladiesretreat@gmail.com</a>
                 <p className="leading-normal my-5">
                     3710 Franklin Pike
