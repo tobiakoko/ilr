@@ -240,6 +240,9 @@ const RegistrationForm = () => {
                   />
                 </div>
               </div>
+              <div>
+                  {/* FIX ME INFO ON ATTENDING IN-PERSON OR ONLINE*/}
+              </div>
               <div className="p-2 w-full">
                 <button
                   disabled={isLoading}

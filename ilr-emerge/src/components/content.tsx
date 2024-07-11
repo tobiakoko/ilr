@@ -174,6 +174,9 @@ const Content = () => {
           Button
         </button>
       </div>
+      <div>
+        {/*SECTION FOR VOLUNTEERS || LINKS TO GOOGLE FORMS*/}
+      </div>
     </section>
   );
 };
