@@ -16,7 +16,7 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <Link href={{pathname: '/'}} className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <Link href={{pathname: '/'}} className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 hover:brightness-95 transition-transform active:scale-95">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -31,13 +31,13 @@ const Header = () => {
           </svg>
           <span className="ml-3 text-xl">ILC</span>
         </Link>
-        <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-          <Link href={{pathname: '/'}} className="mr-5 hover:text-gray-900">First Link</Link>
-          <Link href={{pathname: '/'}} className="mr-5 hover:text-gray-900">Second Link</Link>
-          <Link href={{pathname: '/'}} className="mr-5 hover:text-gray-900">Third Link</Link>
-          <Link href={{pathname: '/'}} className="mr-5 hover:text-gray-900">Fourth Link</Link>
+        <nav className="text-xs font-semibold md:ml-auto flex flex-wrap items-center text-base justify-center hover:text-stone-400">
+          <Link href={{pathname: '/'}} className="mr-5 hover:text-gray-900 hover:underline transition-transform active:scale-95">ABOUT</Link>
+          <Link href={{pathname: '/'}} className="mr-5 hover:text-gray-900 hover:underline transition-transform active:scale-95">CONFERENCE</Link>
+          <Link href={{pathname: '/'}} className="mr-5 hover:text-gray-900 hover:underline transition-transform active:scale-95">CONTACT</Link>
+          <Link href={{pathname: '/'}} className="mr-5 hover:text-gray-900 hover:underline transition-transform active:scale-95">VOLUNTEER</Link>
         </nav>
-        <Link href={{pathname:'/register'}}><button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+        <Link href={{pathname:'/register'}}><button className="transition-transform text-sm font-semibold inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 active:scale-95">
           Unveiled 
           <svg
             fill="none"

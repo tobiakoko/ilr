@@ -10,48 +10,67 @@ const HeroSection = () => {
   return (
     <section className="text-gray-600 body-font">
       <div className="container mx-auto flex px-5 py-12 items-center justify-center flex-col">
-        <div className="text-center lg:w-2/3 w-full">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+        <div className="text-center lg:w-3/4 w-full">
+          <h1 className="title-font md:text-5xl text-3xl mb-4 font-bold text-gray-900">
             ABIDING DEBORAHs MINISTRIES
           </h1>
-          <p className="mb-8 leading-relaxed">
-          <i>
-              And we all, with unveiled face beholding the glory of the Lord,
-              are being transformed into the same image from one degree of glory to glory, 
-              even as by the Spirit of the Lord.
-              </i>
-              - 2 Corinthians 3:18 [KJV]
-          </p>
-
-          <div>
-            <h2 className="sm:text-3xl text-2xl font-medium text-gray-900">Welcome Address From The Host</h2>
-            <div className="flex gap-5 mt-8">
-              <div className="align-left">
+          <div className="flex flex-col md:flex-row -mx-8">
+            <div className="flex flex-col md:w-1/2 px-6 mb-5 md:mb-0">
+              <div>
+                <p className="text-sm mb-2 leading-relaxed bg-violet-600 text-slate-200 italic border rounded-lg py-4 px-2">
+                    And we all, with unveiled face beholding the glory of the Lord,
+                    are being transformed into the same image from one degree of glory to glory, 
+                    even as by the Spirit of the Lord.
+                    <br/>
+                    <span className="not-italic">- 2 Corinthians 3:18 [KJV]</span>
+                </p>
+              </div>
+              <div>
+                <p className="text-left p-2 text-base">
+                Join us as we experience God's divine transformation together. We believe that by gathering in fellowship, studying God's Word, 
+                and supporting one another, we can more fully behold the glory of the Lord and reflect His 
+                image in our lives.
+                </p>
+              </div>
+            </div>
+            <div className="md:w-1/2 px-6 content-center">
+              <Image 
+                    src={image1}
+                    alt='placeholder image of conference speaker'
+                    className="w-full h-full"
+                  />
+            </div>
+          </div>
+          <div className="mt-52">
+            <div className="flex flex-col-reverse md:flex-row -mx-5 my-20">
+              <div className="md:w-1/2 px-5">
                 <Image 
                   src={image1}
                   alt='placeholder image of conference speaker'
-                  quality={70}
+                  className="w-full"
                 />
               </div>
-              <div className="align-left">
-                <p className="leading-relaxed">
-                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi
-                  pug. Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. Gastropub indxgo juice poutine, ramps microdosing
-                  banh mi pug VHS try-hard.Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. 
+              <div className="md:w-1/2 px-5">
+                <div className="mb-12 md:mb-0">
+                  <h2 className="sm:text-2xl text-3xl font-bold text-gray-900 mb-3">Welcome Address From The Host</h2>
+                  <p className="text-sm leading-snug tracking-tight text-left">
+                    Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                    taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi
+                    pug. Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                    taxidermy. Gastropub indxgo juice poutine, ramps microdosing
+                    banh mi pug VHS try-hard.Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                    taxidermy. 
+                    </p>
+                    <p className="text-sm leading-snug tracking-tight text-left mt-3">
+                    Gastropub indxgo juice poutine, ramps microdosing
+                    banh mi pug VHS try-hard.Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                    taxidermy. Gastropub indxgo juice poutine, ramps microdosing
+                    banh mi pug VHS try-hard.Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                    taxidermy. Gastropub indxgo juice poutine, ramps microdosing
+                    banh mi pug VHS try-hard.Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                    taxidermy.
                   </p>
-                  <p>
-                  Gastropub indxgo juice poutine, ramps microdosing
-                  banh mi pug VHS try-hard.Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. Gastropub indxgo juice poutine, ramps microdosing
-                  banh mi pug VHS try-hard.Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. Gastropub indxgo juice poutine, ramps microdosing
-                  banh mi pug VHS try-hard.Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. Gastropub indxgo juice poutine, ramps microdosing
-                  banh mi pug VHS try-hard.
-                </p>
+                </div>
               </div>
             </div>
           </div>

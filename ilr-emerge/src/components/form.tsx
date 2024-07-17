@@ -122,7 +122,7 @@ const ContactForm = () => {
               <div className="p-2 w-full">
                 <button
                   disabled={isLoading}
-                  className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                  className="flex mx-auto text-white bg-violet-600 border-0 py-2 px-8 focus:outline-none hover:bg-violet-900 rounded text-lg transition-transform active:scale-95"
                 >
                   Send
                 </button>

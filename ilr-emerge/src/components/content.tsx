@@ -56,13 +56,13 @@ const Content = () => {
 
   return (
     <section className="text-gray-600 body-font">
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container px-5 py-12 mx-auto">
         <div className="flex flex-wrap w-full mb-8 flex-col items-center text-center">
-          <h2>Theme:</h2>
-          <p className="sm:text-3xl text-2xl font-medium title-font mb-1 text-gray-900">
+          <p className="text-sm font-bold text-violet-600 w-full text-left pl-96">Theme:</p>
+          <p className="w-full h-24 content-center md:text-6xl lg:text-8xl text-5xl font-extrabold leading-none tracking-tighter title mb-1 text-transparent bg-clip-text bg-gradient-to-r from-red-700 from-30% via-orange-500 to-amber-300">
             UNVEILED
           </p>
-          <p className="mt-1 leading-relaxed">
+          <p className="text-sm mt-1 leading-relaxed">
           <i>
             {/*FIX ME*/}
                 ...unveiled slogan goes here 
@@ -81,38 +81,38 @@ const Content = () => {
           </div>
         </div>
         <div>
-          <div className="flex gap-8">
+          <div className="flex justify-center items-center gap-8">
             <div className="md:flex-1 border-b border-gray-500"></div>
-            <h3 className="text-xs text-gray-700 flex-none leading-loose align-baseline tracking-[.5em]">SPEAKERS</h3>
+            <h3 className="text-xs text-gray-700 font-light flex-none leading-loose align-baseline tracking-[1em]">SPEAKERS</h3>
             <div className="md:flex-1 border-b border-gray-500"></div>
           </div>
           {/* Speaker profiles*/}
           <MotionConfig transition={transition}>
-            <motion.div className="relative" initial="initial" whileHover="animate" 
+            <motion.div className="relative flex flex-col md:flex-row justify-center space-x-2" initial="initial" whileHover="animate" 
                         animate={isOpen ? "open" : "closed"} onClick={() => setIsOpen(!isOpen)}
                         tabIndex={0}>
               {speakers.map(speaker => (
-                <motion.div key={speaker.position} className="mt-4 max-w-sm bg-white border border-zinc-950/10 overflow-hidden rounded-lg shadow"
-                            layoutId={`dialog-${uniqueId}`} style={{ borderRadius: "12px"}} >
+                <motion.div key={speaker.position} className="mt-4 max-w-sm bg-white border border-zinc-950/10 overflow-hidden rounded-md shadow"
+                            layoutId={`dialog-${uniqueId}`} style={{ borderRadius: "5px"}} >
                   <motion.div layoutId={`dialog-img-${uniqueId}`}>
                     <Image 
                       src={speaker.image}
                       alt={speaker.name}
-                      className="object-cover w-full h-96"
+                      className="object-cover w-full"
                     />
                   </motion.div>
-                  <div className="flex flex-grow flex-row items-end justify-between p-2">
-                  <div>
-                    <motion.div layoutId={`dialog-title-${uniqueId}`} className="mb-2 text-2xl font-bold text-gray-900">{speaker.name}</motion.div>
-                    <motion.div layoutId={`dialog-subtitle-${uniqueId}`} layout="position" className="mb-3 font-sm text-gray-700 tracking-tight">{speaker.designation}</motion.div>
-                  </div>
-                  <button type="button" aria-label="Open dialog"  
-                              className="relative ml-1 flex h-6 w-6 shrink-0 scale-100 select-none appearance-none items-center justify-center 
-                              rounded-lg border border-zinc-950/10 text-zinc-500 transition-colors hover:bg-zinc-100 hover:text-zinc-800 focus-visible:ring-2 
-                              active:scale-[0.98]">
-                                <PlusIcon size={12} />
-                      <span className="sr-only">Open actions menu</span>
-                  </button>
+                  <div className="flex flex-grow flex-row items-end justify-between p-1">
+                    <div>
+                      <motion.div layoutId={`dialog-title-${uniqueId}`} className="mb-2 text-xl font-bold tracking-tight text-gray-900">{speaker.name}</motion.div>
+                      <motion.div layoutId={`dialog-subtitle-${uniqueId}`} layout="position" className="mb-3 font-xs tracking-tight text-gray-700 tracking-tight">{speaker.designation}</motion.div>
+                    </div>
+                    <button type="button" aria-label="Open dialog"  
+                                className="relative ml-1 flex h-6 w-6 shrink-0 scale-100 select-none appearance-none items-center justify-center 
+                                rounded-lg border border-zinc-950/10 text-zinc-500 transition-colors hover:bg-zinc-100 hover:text-zinc-800 focus-visible:ring-2 
+                                active:scale-[0.98]">
+                                  <PlusIcon size={12} />
+                        <span className="sr-only">Open actions menu</span>
+                    </button>
                   </div>    
                 </motion.div>  
               ))}
@@ -185,18 +185,12 @@ const Content = () => {
         </div>
       </div>
       <div className="flex justify-center mb-12">
-          <Link href={{pathname:`/register`}}><button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+          <Link href={{pathname:`/register`}}><button className="inline-flex text-white bg-violet-600 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg transition-transform active:scale-95">
               Register
           </button></Link>
-          <Link href="#contact"><button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg" onClick={()=>scrollToSection("contact")}>
+          <Link href="#contact"><button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg transition-transform active:scale-95" onClick={()=>scrollToSection("contact")}>
             Contact us
           </button></Link>
-      </div>
-
-      <div>
-        {/*--------------------------------------------------------*/}
-        {/*SECTION FOR VOLUNTEERS & DONORS || LINKS TO GOOGLE FORMS*/}
-        {/*--------------------------------------------------------*/}
       </div>
     </section>
   );
