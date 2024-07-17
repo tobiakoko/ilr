@@ -11,7 +11,7 @@ export default function Home() {
     <main>
       <HeroSection />
       <Content />
-      <Feature />
+      {/*<Feature />*/}
       <Contact />
     </main>
   );
