@@ -33,8 +33,8 @@ const Header = () => {
         </Link>
         <nav className="text-xs font-semibold md:ml-auto flex flex-wrap items-center text-base justify-center hover:text-stone-400">
           <Link href={{pathname: '/'}} className="mr-5 hover:text-gray-900 hover:underline transition-transform active:scale-95">ABOUT</Link>
-          <Link href={{pathname: '/'}} className="mr-5 hover:text-gray-900 hover:underline transition-transform active:scale-95">CONFERENCE</Link>
-          <Link href={{pathname: '/'}} className="mr-5 hover:text-gray-900 hover:underline transition-transform active:scale-95">CONTACT</Link>
+          <Link href={{pathname: '/', hash: 'unveiled'}} className="mr-5 hover:text-gray-900 hover:underline transition-transform active:scale-95">CONFERENCE</Link>
+          <Link href={{pathname: '/', hash: 'contact'}} className="mr-5 hover:text-gray-900 hover:underline transition-transform active:scale-95">CONTACT</Link>
           <Link href={{pathname: '/'}} className="mr-5 hover:text-gray-900 hover:underline transition-transform active:scale-95">VOLUNTEER</Link>
         </nav>
         <Link href={{pathname:'/register'}}><button className="transition-transform text-sm font-semibold inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 active:scale-95">
