@@ -3,7 +3,6 @@ import React from "react";
 import Link from "next/link";
 
 import { useScrollPosition } from "@/hooks/useScrollPosition";
-import Home from "@/app/page";
 
 const Header = () => {
   const scrollPosition = useScrollPosition();
