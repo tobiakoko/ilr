@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-
 import HeroSection from "@/components/hero-section";
 import Content from "@/components/content";
 import Contact from "@/components/contact";
@@ -11,7 +10,7 @@ export default function Home() {
       <HeroSection />
       <Content />
       {/*<Feature />*/}
-      {/*<Contact />*/}
+      <Contact />
     </main>
   );
 }

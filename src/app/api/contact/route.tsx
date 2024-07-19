@@ -17,7 +17,7 @@ export async function POST(req: NextRequest, res: NextResponse) {
   const options = {
     from: smtpEmail,
     to: smtpEmail,
-    subject: "New Form Submission",
+    subject: "New Message from Website",
     html: emailHtml,
   };
 

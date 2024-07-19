@@ -31,7 +31,7 @@ export const Email: React.FC<Readonly<EmailProps>> = ({
               You got a message!
             </Heading>
             <Text className="text-[14px] leading-[24px] text-black">
-              Hello Hosna,
+              Hello Tessy,
             </Text>
             <Text className="text-[14px] leading-[24px] text-black">
               You got an email from <strong>{name}</strong>. Their email is{" "}
